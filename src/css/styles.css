@@ -1,25 +1,39 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+/* ================== Обнулення =================== */
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+a {
+  text-decoration: none;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ========================Основні стилі ================ о */
+
+.link {
+  font: 500 16px / 1.5 Montserrat, sans-serif;
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 1.5s;
+}
+
+.link:hover {
+  background-color: #6c8cff;
 }
