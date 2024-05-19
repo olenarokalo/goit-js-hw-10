@@ -1,7 +1,9 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
-var options = new flatpickr(`#datetime-picker`, {
+const options = {
   enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),
@@ -9,4 +11,4 @@ var options = new flatpickr(`#datetime-picker`, {
   onClose(selectedDates) {
     console.log(selectedDates[0]);
   },
-});
+};
