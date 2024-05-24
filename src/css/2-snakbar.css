@@ -1,35 +1,85 @@
-/* Reset styles */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
+/* ================== Обнулення ==================== */
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 a {
-  color: currentColor;
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
+/* ======================= Основні стилі =========================== */
+
+.nav-link {
+  font: 500 16px / 1.5 Montserrat, sans-serif;
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 1.5s;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.nav-link:hover {
+  background-color: #6c8cff;
+}
+
+section {
+  margin-left: 30px;
+}
+
+/* =========================== PROMISE GENERATOR ====================== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset {
+  display: flex;
+  justify-content: center;
+}
+
+input[type='number'] {
+  display: flex;
+  margin-top: 10px;
+  width: 290px;
+  height: 40px;
+}
+
+button {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  width: 360px px;
+  height: 40px px;
+  top: 226px;
+  left: 156px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  border: none;
 }
